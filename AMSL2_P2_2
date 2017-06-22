@@ -1,0 +1,10 @@
+		MVN		r0, #0
+		EOR		r0, r0, #1
+		EOR		r0, r0, #2
+		EOR		r0, r0, #4
+		EOR		r0, r0, #8
+		EOR		r0, r0, #16
+		EOR		r0, r0, #32
+		EOR		r0, r0, #64
+		EOR		r0, r0, #128
+		END

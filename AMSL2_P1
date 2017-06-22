@@ -1,0 +1,13 @@
+		MOV		r0, #16       ;Move value 16 into register R0.
+		MOV		r1, r0        ;Move the contents of R0 into R1.
+		MVN		r2, r1        ;R2 = NOT(R1) = -17
+		MOV		r0, r0        ;A NOP (no operation) instruction.
+		MOV		r3, #4        ;MOV 4 into r3 to test AND
+		ORR		r4, r0, r3    ;R4 = R0 AND R3: 10000 AND 00100
+		MVN		r5, #0        ;R5 = 0xFFFFFFFF
+		MOV		r6, #0        ;R6 = Ox00000000
+		AND		r7, r4, r5    ;r7 = r4
+		AND		r8, r4, r6    ;r8 = Ox00000000
+		EOR		r9, r4, r5    ;Same effect as NOT R4
+		BIC		r10, r5, r4   ;Clear out the 5th & 3rd bit
+		END
